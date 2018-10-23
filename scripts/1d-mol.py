@@ -27,19 +27,19 @@ while (nbr != random_number or nbr !=sortie) :
   
   if (nbr == sortie):
       random_number = (str(random_number))
-      print("Merci d'avoir tenté votre chance, la réponse était: " + r)
+      print("Merci d'avoir tenté votre chance, la réponse était: " + random_number)
+      sys.exit(0)
 
-  else:
-      if pattern.match(nbr):
-        nbr=(int(nbr))
-
-        if (nbr<random_number):
+  
+  if pattern.match(nbr):
+    nbr=(int(nbr))
+    if (nbr<random_number):
           print("Le nombre à trouver est plus grand")
-        elif (nbr>random_number):
+    elif (nbr>random_number):
             print("Le nombre à trouver est plus petit")
-        else:
+    else:
             print("Vous avez trouver la réponse!!")
-      else:
+  else:
         print("erreur, vous n'avez pas rentré des chiffres")
  
 
