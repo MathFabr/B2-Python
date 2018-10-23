@@ -39,6 +39,7 @@ while (nbr != random_number or nbr !=sortie) :
             print("Le nombre à trouver est plus petit")
     else:
             print("Vous avez trouver la réponse!!")
+            sys.exit(0)
   else:
         print("erreur, vous n'avez pas rentré des chiffres")
  
