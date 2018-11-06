@@ -32,9 +32,9 @@ def writeToFile(message):
 
 
 def readToFile():
-      f = open("./jeu.txt", "r")
-      proposition = f.read()
-      f.close()
+      lire = open("./jeu.txt", "r")
+      proposition = lire.read()
+      lire.close()
       return proposition
 
 ###############################################################################################
